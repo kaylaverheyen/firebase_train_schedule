@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>🔥train schedule🔥</title>
+
+    <!--  Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Firebase Reference -->
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD3hyl5xGm-nKv84J8vnup35HsgzFj5LLo",
+            authDomain: "timesheet-2b915.firebaseapp.com",
+            databaseURL: "https://timesheet-2b915.firebaseio.com",
+            projectId: "timesheet-2b915",
+            storageBucket: "",
+            messagingSenderId: "112498931364"
+        };
+        firebase.initializeApp(config);
+
+    </script>
+    <!-- Moment.js Reference -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+</head>
+
+<body>
+    <!-- Employee Tracker -->
+    <div class="container">
+
+        <!-- Jumbotron -->
+        <div class="jumbotron" style="background-color: burlywood; color:black">
+            <h1 class="text-center">🔥Train Schedule🔥</h1>
+            <h3 class="text-center"> 🚈 🚈 🚈 🚈 🚈 🚈 🚈 🚈 🚈 🚈 🚈 🚈 </h3>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <!-- Add Employee  -->
+                <div class="card mb-4 p-4">
+                    <div class="card-body">
+                        <h3>Add Train</h3>
+                        <!-- Entry Form -->
+                        <form>
+                            <div class="form-group row">
+                                <label for="train-name-input">Train Name</label>
+                                <input class="form-control" id="train-name-input" placeholder="the bullet" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="destination-input">Destination</label>
+                                <input class="form-control" id="destination-input" placeholder="never never land" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="first-time-input">First Train Time (HH:MM | Military time)</label>
+                                <input class="form-control" id="irst-time-input" placeholder="" type="text">
+                            </div>
+                            <div class="form-group row">
+                                <label for="frequency-input">Frequency</label>
+                                <input class="form-control" id="frequency-input" placeholder="" type="text">
+                            </div>
+                            <button class="btn btn-primary float-right" id="add-train-btn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-12">
+
+
+
+
+
+                <!-- JavaScript -->
+
+                <script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
+
+</body>
+
+</html>
