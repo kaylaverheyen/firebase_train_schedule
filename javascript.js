@@ -17,6 +17,7 @@ $("button").on("click", function (event) {
         "destination": destination,
         "firstTime": firstTime,
         "frequency": frequency
+
     });
 
     //moment JS
@@ -65,3 +66,9 @@ $("button").on("click", function (event) {
 
 });
 
+$(document).ready(function () {
+    $("#reset-train-btn").click(function () {
+        /* Single line Reset function executes on click of Reset Button */
+        $("#form")[0].reset();
+    });
+});
